@@ -14,11 +14,11 @@ logger = logging.getLogger(__name__)
 def move_file_to_cloud(update: Update, context: CallbackContext):
     update.message.reply_text('this is a test msg!')
     
-    file_name = '/app/bot/plugins/move.sh'
+    #file_name = '/app/bot/plugins/move.sh'
 
     #os.system('/bin/bash -c "bash /app/bot/plugins/move.sh"')
 
-    subprocess.call(["bash", "/app/bot/plugins/move.sh"], shell=False)
+    subprocess.call(["bash", "move.sh"], shell=False)
 
     os.uname()
 
